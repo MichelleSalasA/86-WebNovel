@@ -43,7 +43,7 @@ const NovelContainer = () => {
                 onNextBtnHandler={nextBtnHandler}
                 onPrevBtnHandler={prevBtnHandler}
             />
-            <DialogContainer chapter={chapter}/>
+            <DialogContainer chapter={chapter} setChapter={setChapter}/>
         </div>
     )
 };

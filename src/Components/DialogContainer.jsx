@@ -1,6 +1,7 @@
+import ChapterSelect from './ChapterSelect';
 import './DialogContainer.css';
 
-const DialogContainer = ({ chapter }) => {
+const DialogContainer = ({ chapter, setChapter }) => {
     const dialogs = [
         <p className="para-1">There were no casualties on that battlefield.
             <br/>
@@ -64,7 +65,7 @@ const DialogContainer = ({ chapter }) => {
     return  (
         <div className="article-container">
             <article>
-                <h2>Chapter I</h2>
+                <ChapterSelect chapter={chapter} setChapter={setChapter}/>
                 <h3>A battlefield with zero casualities</h3>
                 {dialogs[chapter - 1]}
             </article>
