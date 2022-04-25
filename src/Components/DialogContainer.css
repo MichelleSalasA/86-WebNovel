@@ -1,5 +1,15 @@
-article {
-    display: flex;
-    flex-direction: column;
-    overflow-y: visible;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+h1, 
+h2,
+h3 {
+    margin: 15px;
 }
